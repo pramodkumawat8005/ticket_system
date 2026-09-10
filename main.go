@@ -39,7 +39,7 @@ func main() {
 	mux.HandleFunc("POST /auth/register", app.handleRegister)
 	mux.HandleFunc("POST /auth/login", app.handleLogin)
 
-	// Protected endpoints (require a valid JWT)
+	// Protected endpoints (require a valid bearer token)
 	mux.HandleFunc("POST /tickets", app.requireAuth(app.handleCreateTicket))
 	mux.HandleFunc("GET /tickets", app.requireAuth(app.handleListTickets))
 	mux.HandleFunc("GET /tickets/{id}", app.requireAuth(app.handleGetTicket))
