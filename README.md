@@ -1,4 +1,4 @@
-# Ticket System (Golang Backend Intern Assignment)
+# Ticket System
 
 A small backend service where a user can register, log in, create tickets,
 view only their own tickets, and update the status of their own tickets.
@@ -133,25 +133,12 @@ See `.env.example`.
 | `PORT`       | No       | `8080`                    | Port the HTTP server listens on   |
 
 ## Deployment
-
-
-- **Render** (free web service, Docker or native Go runtime)
-
-General steps (Render example):
-1. Push this repository to GitHub.
-2. Create a new "Web Service" on Render, point it at the repo, and choose
-   "Docker" as the environment (it will pick up the `Dockerfile`).
-3. Set the `JWT_SECRET` environment variable in the dashboard.
-4. Render assigns the container a `PORT` env var automatically; this app
-   already reads `PORT` from the environment, so no code changes are needed.
-5. Once deployed, the public health check is available at
-   `https://<your-service>.onrender.com/health`.
-
+- **Render** 
 _Deployed URL and public health check URL should be filled in here once
 deployed, e.g.:_
-- Deployed application URL: `<>`
-- Public health check URL: `<>`
-- GitHub repository link: `<>`
+- Deployed application URL: `<https://ticket-system-k9is.onrender.com>`
+- Public health check URL: `<https://ticket-system-k9is.onrender.com/health>`
+- GitHub repository link: `<https://github.com/pramodkumawat8005/ticket_system>`
 
 ## Assumptions
 
